@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do Site">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Lucas Gabriel">
+    <link rel="stylesheet" href="/estilizacao/style.css">
+    <title>Prática N2 - Cadastro</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <section>
+            <fieldset class="fieldset-cadastro">
+                <legend>Cadastro</legend>
+
+                <label for="nome"></label>
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="senha"></label>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <label for="confirmar-senha"></label>
+                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirmar Senha" required>
+
+                <div class="radio-cadastro">
+                    <input type="radio" id="masculino" name="genero" value="masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                </div>
+
+                <div class="button-cadastro">
+                    <button type="submit" onclick="window.location.href='login.html'">Seguir</button>
+                    <hr>
+                    <button type="submit" onclick="window.location.href='login.html'">Login</button>
+                    <button id="google" type="submit" onclick="window.location.href='/paginas/home.html'">Continuar com Google</button>
+                </div>
+
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
